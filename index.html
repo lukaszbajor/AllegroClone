@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allegro - Simple Clone - atrakcyjne ceny</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Allegro - Simple Clone</title>
+    <script
+      src="https://kit.fontawesome.com/9bf94860b7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <p class="header__logo">allegro</p>
-        <div class="header__userIcons"></div>
+        <div class="header__userIcons">
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-comments-o" aria-hidden="true"></i>
+          <i class="fa fa-bell-o" aria-hidden="true"></i>
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+        </div>
         <div class="header__searchbarBox">
           <input
             type="search"
@@ -21,9 +31,12 @@
             placeholder="czego szukasz?"
           />
           <a href="#"> szukaj wielu</a>
-          <button class="header__searchbarBox__searchBtn">wyszukaj</button>
+          <button class="header__searchbarBox__searchBtn">Q</button>
         </div>
       </header>
+      <section class="carousel">
+        <div class="carousel__dots"></div>
+      </section>
     </div>
 
     <script src="./js/products.js"></script>
