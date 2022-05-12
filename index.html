@@ -30,13 +30,62 @@
             class="header__searchbarBox__searchbar"
             placeholder="czego szukasz?"
           />
-          <a href="#"> szukaj wielu</a>
-          <button class="header__searchbarBox__searchBtn">Q</button>
+          <a href="#" class="header__searchbarBox__searchHref"> szukaj wielu</a>
+          <button class="header__searchbarBox__searchBtn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
         </div>
       </header>
-      <section class="carousel">
+      <main class="main">
+        <section class="category">
+          <div class="category__boxOne">
+            <h2 class="category__title">kategorie</h2>
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </div>
+          <div class="category__boxSecond">
+            <ul class="category__boxSecond__list">
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <p>Elektronika</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <p>Kultura i rozrywka</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                <p>Sport i turystyka</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                <p>Motoryzacja</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+                <p>Zdrowie</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <p>Uroda</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Dom i ogród</p>
+              </li>
+              <li class="category__boxSecond__list__item">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+                <p>Moda</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="carousel">
+          <div class="carousel__dots"></div>
+        </section>
+      </main>
+      <!-- <section class="carousel">
         <div class="carousel__dots"></div>
-      </section>
+      </section> -->
     </div>
 
     <script src="./js/products.js"></script>

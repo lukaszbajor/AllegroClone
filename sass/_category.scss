@@ -1,0 +1,30 @@
+.category {
+  &__boxOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+  }
+  &__boxSecond {
+    margin-top: 2em;
+    color: $dark-gray-color;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      &__item {
+        margin: 0.5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2rem;
+        i {
+          padding: 0.2em;
+          font-size: 1.8rem;
+        }
+        p {
+        }
+      }
+    }
+  }
+}
