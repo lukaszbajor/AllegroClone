@@ -1,4 +1,8 @@
 .category {
+  @include basic;
+  &__title {
+    text-transform: uppercase;
+  }
   &__boxOne {
     display: flex;
     justify-content: space-between;
@@ -19,10 +23,9 @@
         align-items: center;
         font-size: 2rem;
         i {
+          width: 50px;
           padding: 0.2em;
           font-size: 1.8rem;
-        }
-        p {
         }
       }
     }
