@@ -4,10 +4,15 @@
     text-transform: uppercase;
   }
   &__boxOne {
+    padding-bottom: 0.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid $light-gray-color;
     font-size: 2rem;
+    i {
+      color: $dark-gray-color;
+    }
   }
   &__boxSecond {
     margin-top: 2em;

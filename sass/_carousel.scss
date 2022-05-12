@@ -1,0 +1,8 @@
+.carousel {
+  @include basic;
+  height: 250px;
+  background-image: url("../images/img1.jpg");
+  background-position: center;
+  background-size: center;
+  object-fit: cover;
+}
