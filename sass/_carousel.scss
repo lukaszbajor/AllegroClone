@@ -1,8 +1,25 @@
 .carousel {
   @include basic;
   height: 250px;
+  position: relative;
   background-image: url("../images/img1.jpg");
   background-position: center;
   background-size: center;
   object-fit: cover;
+  &__dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    &__dot {
+      width: 8px;
+      height: 8px;
+      background-color: $dark-gray-color;
+      border-radius: 50%;
+      &--second {
+        margin: 0 0.3em;
+      }
+    }
+  }
 }
