@@ -11,3 +11,7 @@ html {
 body {
   background-color: $body-color;
 }
+main {
+  display: flex;
+  flex-direction: column;
+}

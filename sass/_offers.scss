@@ -1,4 +1,11 @@
 .offers {
   @include basic;
-  display: none;
+  // display: none;
+
+  &__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid $light-gray-color;
+  }
 }

@@ -2,6 +2,7 @@
   @include basic;
   &__title {
     text-transform: uppercase;
+    font-size: 3rem;
   }
   &__boxOne {
     padding-bottom: 0.5em;
@@ -9,9 +10,9 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $light-gray-color;
-    font-size: 2rem;
     i {
       color: $dark-gray-color;
+      font-size: 2rem;
     }
   }
   &__boxSecond {
