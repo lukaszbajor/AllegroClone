@@ -10,7 +10,10 @@
         "../sass/_category.scss",
         "../sass/_offers.scss",
         "../sass/_recommended.scss",
-        "../sass/_carousel.scss"
+        "../sass/_carousel.scss",
+        "../sass/_ad.scss",
+        "../sass/_nav.scss",
+        "../sass/_footer.scss"
     ],
     "names": [],
     "file": "style.css"
