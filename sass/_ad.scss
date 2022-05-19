@@ -1,0 +1,27 @@
+.ad {
+  @include basic;
+  background-image: url("../images/sales1.jpg");
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
+  color: $white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    padding: 1em 3em;
+    border: 3px solid white;
+    background-color: $dark-gray-color-op;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 992px) {
+  .ad {
+    &__title {
+      padding: 1em 6em;
+      font-size: 3rem;
+    }
+  }
+}
