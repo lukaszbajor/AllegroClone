@@ -1,0 +1,10 @@
+.footer {
+  padding: 1em;
+  background-color: $footer-color;
+  color: $white-color;
+  font-size: 1.8rem;
+  text-align: center;
+  span {
+    color: $refs-color;
+  }
+}
