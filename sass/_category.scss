@@ -2,7 +2,7 @@
   @include basic;
   &__title {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
   &__boxOne {
     padding-bottom: 0.5em;
@@ -12,7 +12,7 @@
     border-bottom: 1px solid $light-gray-color;
     i {
       color: $dark-gray-color;
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
   &__boxSecond {
