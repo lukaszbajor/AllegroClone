@@ -14,13 +14,3 @@ body {
 .wrapper {
   overflow: hidden;
 }
-main {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1200px) {
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
