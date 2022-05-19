@@ -12,7 +12,10 @@
     &__item {
       margin: 0.5em;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      &__img {
+        margin-right: 2em;
+      }
     }
   }
 }

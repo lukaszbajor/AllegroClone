@@ -1,0 +1,19 @@
+.chance {
+  @include basic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 2.2rem;
+  }
+  &__item {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__img {
+      margin-right: 2em;
+    }
+  }
+}
