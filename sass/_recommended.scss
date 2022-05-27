@@ -1,6 +1,6 @@
 .recommended {
   @include basic;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
 
   &__title {
@@ -22,9 +22,12 @@
       justify-content: flex-start;
 
       &__img {
-        width: 50px;
-        height: 50px;
         margin-right: 2em;
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
       }
       &__details {
         h3 {
@@ -45,8 +48,6 @@
 @media (min-width: 992px) {
   .recommended {
     margin-top: 1em;
-    height: 300px;
-
     &__box {
       max-width: 360px;
       &__item {
