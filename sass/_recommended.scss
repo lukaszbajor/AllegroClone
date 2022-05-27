@@ -1,21 +1,43 @@
 .recommended {
   @include basic;
-  height: 230px;
+  height: 250px;
+  overflow: hidden;
+
   &__title {
+    margin-bottom: 1em;
     font-size: 2.2rem;
     text-align: center;
   }
   &__watch {
   }
   &__box {
+    // margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    overflow-x: auto;
+
     &__item {
-      margin: 0.5em;
+      margin: 0 8em;
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
+
       &__img {
+        width: 50px;
+        height: 50px;
         margin-right: 2em;
+      }
+      &__details {
+        h3 {
+          font-size: 2rem;
+        }
+        :nth-child(2) {
+          color: $dark-gray-color;
+          font-size: 1.5rem;
+        }
+        :nth-child(3) {
+          color: red;
+          font-size: 1.2rem;
+        }
       }
     }
   }
@@ -23,5 +45,55 @@
 @media (min-width: 992px) {
   .recommended {
     margin-top: 1em;
+    height: 300px;
+
+    &__box {
+      max-width: 360px;
+      &__item {
+        margin: 0 6em;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .recommended {
+    &__box {
+      max-width: 450px;
+      &__item {
+        margin: 0 4em;
+      }
+    }
+  }
+}
+@media (min-width: 1100px) {
+  .recommended {
+    &__box {
+      max-width: 550px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .recommended {
+    &__box {
+      max-width: 650px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .recommended {
+    &__box {
+      max-width: 750px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .recommended {
+    &__box {
+      max-width: 800px;
+      &__item {
+        margin: 0 5em;
+      }
+    }
   }
 }
