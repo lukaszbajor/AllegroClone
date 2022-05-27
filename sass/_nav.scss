@@ -22,7 +22,11 @@
       &__link {
         margin-top: 0.5em;
         font-size: 1.8rem;
-        color: $dark-gray-color;
+        font-weight: 300;
+        color: $black-color;
+        span {
+          font-weight: bold;
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 .recommended {
   @include basic;
-  height: 300px;
+  height: 320px;
   overflow: hidden;
 
   &__title {
@@ -45,12 +45,7 @@
     }
   }
   &__more {
-    margin-top: 0.3em;
-    text-align: center;
-    text-transform: uppercase;
-    color: $refs-color;
-    letter-spacing: 2px;
-    font-size: 1.8rem;
+    @include btnMore;
   }
 }
 @media (min-width: 992px) {

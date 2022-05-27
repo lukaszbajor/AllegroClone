@@ -3,3 +3,12 @@
   padding: 2em;
   background-color: $white-color;
 }
+@mixin btnMore {
+  margin: 0.3em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $refs-color;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}

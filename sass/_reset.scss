@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 html {
+  font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
 }
 body {
@@ -13,4 +14,8 @@ body {
 }
 .wrapper {
   overflow: hidden;
+}
+input,
+button {
+  font-family: "Open Sans", sans-serif;
 }
