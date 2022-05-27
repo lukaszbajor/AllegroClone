@@ -16,7 +16,7 @@
     overflow-x: auto;
 
     &__item {
-      margin: 0 8em;
+      margin: 0 6em;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -24,8 +24,9 @@
       &__img {
         margin-right: 2em;
         img {
-          width: 100px;
+          width: 150px;
           height: 100px;
+          border-radius: 2px;
           object-fit: cover;
         }
       }
@@ -34,15 +35,22 @@
           font-size: 2rem;
         }
         :nth-child(2) {
-          color: $dark-gray-color;
           font-size: 1.5rem;
         }
         :nth-child(3) {
-          color: red;
+          color: $dark-gray-color;
           font-size: 1.2rem;
         }
       }
     }
+  }
+  &__more {
+    margin-top: 0.3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $refs-color;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 992px) {
@@ -50,9 +58,6 @@
     margin-top: 1em;
     &__box {
       max-width: 360px;
-      &__item {
-        margin: 0 6em;
-      }
     }
   }
 }
