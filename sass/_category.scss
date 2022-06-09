@@ -1,19 +1,24 @@
 .category {
   @include basic;
 
-  &__title {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-  }
   &__boxOne {
     padding-bottom: 0.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $light-gray-color;
-    i {
+    // transition: all 0.3s;
+    &__title {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+    }
+    &__icon {
       color: $dark-gray-color;
       font-size: 2.2rem;
+      transition: transform 0.3s;
+      &--iconUp {
+        transform: rotate(180deg);
+      }
     }
   }
   &__boxSecond {
@@ -42,11 +47,19 @@
         }
       }
     }
+    &--showContent {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 992px) {
   .category {
+    &__boxOne {
+      i {
+        display: none;
+      }
+    }
     &__boxSecond {
       &__list {
         &__item {
