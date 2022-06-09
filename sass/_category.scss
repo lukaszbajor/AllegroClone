@@ -18,7 +18,7 @@
   }
   &__boxSecond {
     margin-top: 2em;
-    color: $dark-gray-color;
+
     &__list {
       display: flex;
       flex-direction: column;
@@ -29,6 +29,7 @@
         justify-content: flex-start;
         align-items: center;
         font-size: 2rem;
+        color: $dark-gray-color;
         i {
           width: 50px;
           // padding: 0.2em;
@@ -38,6 +39,28 @@
           font-size: 1.7rem;
           color: $black-color;
           font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .category {
+    &__boxSecond {
+      &__list {
+        &__item {
+          cursor: pointer;
+          i,
+          p {
+            transition: color 0.3s;
+          }
+        }
+        &__item:hover {
+          i,
+          p {
+            color: $refs-color;
+          }
         }
       }
     }
