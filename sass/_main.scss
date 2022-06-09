@@ -4,6 +4,16 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+.blockFirst {
+  &--coverContent {
+    display: none;
+  }
+}
+.blockSecond {
+  &--coverContent {
+    display: none;
+  }
+}
 
 @media (min-width: 992px) {
   .main {
@@ -15,11 +25,15 @@
     flex-direction: column;
     flex-grow: 1;
     margin: 0 1em;
-    // display: none;
+    &--coverContent {
+      display: none;
+    }
   }
   .blockSecond {
     display: flex;
     flex-direction: column;
-    // display: none;
+    &--coverContent {
+      display: none;
+    }
   }
 }

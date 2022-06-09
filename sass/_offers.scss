@@ -1,8 +1,7 @@
 .offers {
   @include basic;
   display: none;
-  // flex-grow: 2;
-  // margin-left: 1em;
+
   &__title {
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -14,6 +13,19 @@
       display: flex;
       justify-content: space-between;
       padding-top: 1em;
+    }
+  }
+  &--showOffers {
+    display: unset;
+    flex-grow: 1;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .offers {
+    &--showOffers {
+      margin-left: 1em;
     }
   }
 }
