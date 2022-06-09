@@ -13,12 +13,26 @@
     position: absolute;
     bottom: 10px;
     &__dot {
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
       background-color: $dark-gray-color;
       border-radius: 50%;
       &--second {
         margin: 0 0.3em;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    &__dots {
+      &__dot {
+        transition: background-color 0.3s;
+        cursor: pointer;
+      }
+      &__dot:hover {
+        background-color: $light-gray-color;
       }
     }
   }
