@@ -53,6 +53,17 @@
     margin-top: 1em;
     &__box {
       max-width: 360px;
+      &__item {
+        &__img {
+          img {
+            transition: transform 0.3s;
+            cursor: pointer;
+          }
+          img:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
     }
   }
 }
