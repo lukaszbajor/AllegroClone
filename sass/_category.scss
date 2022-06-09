@@ -61,6 +61,7 @@
       }
     }
     &__boxSecond {
+      display: flex;
       &__list {
         &__item {
           cursor: pointer;
