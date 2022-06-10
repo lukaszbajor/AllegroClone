@@ -24,3 +24,20 @@ allCategories.forEach((item) => {
     secondMainBlock.classList.add("blockSecond--coverContent");
   });
 });
+
+//change image on click in other dots
+const dots = [...document.querySelectorAll(".carousel__dots__dot")];
+const backgroundImage = document.querySelector(".carousel");
+
+dots.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image: url(../images/img${index + 1}.jpg)`
+    );
+  });
+});
+
+// const changeImage = () => {
+
+// }
