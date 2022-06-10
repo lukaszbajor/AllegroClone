@@ -22,6 +22,9 @@
       }
     }
   }
+  .active {
+    border: 1px solid $main-color;
+  }
 }
 
 @media (min-width: 992px) {

@@ -28,13 +28,19 @@ allCategories.forEach((item) => {
 //change image on click in other dots
 const dots = [...document.querySelectorAll(".carousel__dots__dot")];
 const backgroundImage = document.querySelector(".carousel");
-
+const arr = [0];
 dots.forEach((item, index) => {
+  item.classList.remove("active");
+  dots[arr[0]].classList.add("active");
   item.addEventListener("click", () => {
+    dots[arr.slice(-1)].classList.remove("active");
+    item.classList.add("active");
     backgroundImage.setAttribute(
       "style",
       `background-image: url(../images/img${index + 1}.jpg)`
     );
+    arr.push(index);
+    console.log(arr);
   });
 });
 
