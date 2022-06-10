@@ -12,7 +12,54 @@
     &__item {
       display: flex;
       justify-content: space-between;
-      padding-top: 1em;
+      padding: 2em 0 1em 0;
+      border-bottom: 1px solid $light-gray-color;
+      &__detailsBox {
+        display: flex;
+        &__img {
+          margin-right: 1.5em;
+          img {
+            width: 150px;
+            height: 100px;
+            border-radius: 2px;
+            object-fit: cover;
+          }
+        }
+        &__details {
+          align-self: center;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: normal;
+          }
+          :nth-child(2) {
+            color: $dark-gray-color;
+            font-size: 1.2rem;
+          }
+          :nth-child(3) {
+            font-size: 1.8rem;
+            font-weight: bold;
+          }
+          :nth-child(4) {
+            color: $dark-gray-color;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &__howPeopleBuy {
+        margin: 0 0.5em;
+        align-self: flex-end;
+        font-size: 1.2rem;
+      }
+      &__btn {
+        align-self: flex-end;
+        padding: 0.7em;
+        background-color: $main-color;
+        border: none;
+        border-radius: 2px;
+        color: $white-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
     }
   }
   &--showOffers {
@@ -26,6 +73,25 @@
   .offers {
     &--showOffers {
       margin-left: 1em;
+    }
+    &__box {
+      &__item {
+        &__detailsBox {
+          &__img {
+            img {
+              transition: transform 0.3s;
+              cursor: pointer;
+            }
+            img:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+
+        &__btn {
+          cursor: pointer;
+        }
+      }
     }
   }
 }
