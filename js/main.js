@@ -30,23 +30,28 @@ allCategories.forEach((item) => {
         const div = document.createElement("div");
         div.classList.add("offers__box__item");
         div.innerHTML = `
-        <div class="offers__box__item__detailsBox">
-    <div class="offers__box__item__detailsBox__img">
-      <img src=${product.imgSrc} alt="product image" />
+          <div class="offers__box__item__detailsBox">
+      <div class="offers__box__item__detailsBox__img">
+        <img src=${product.imgSrc} alt="product image" />
+      </div>
+      <div class="offers__box__item__detailsBox__details">
+        <h3>${product.name}</h3>
+        <p>Stan: ${product.state}</p>
+        <p>${product.price}zł</p>
+        <p>Z dostawą: ${product.price + product.priceWithDelivery}zł</p>
+      </div>
     </div>
-    <div class="offers__box__item__detailsBox__details">
-      <h3>Telefon Nokia 3310</h3>
-      <p>Stan: Nowy</p>
-      <p>${product.price}zł</p>
-      <p>Z dostawą: ${product.priceWithDelivery}zł</p>
+    <div class="wrapForItemEl">
+    <div class="offers__box__item__howPeopleBuy">
+      <p>${product.peopleBuy} osób ${
+          product.state === "Nowy" ? "kupiło" : "licytuje"
+        }</p>
     </div>
-  </div>
-  <div class="offers__box__item__howPeopleBuy">
-    <p>155 osób kupiło</p>
-  </div>
-  <button class="offers__box__item__btn">koszyk</button>
-
-        `;
+    <button class="offers__box__item__btn">${
+      product.state === "Nowy" ? "koszyk" : "licytuj"
+    }</button>
+</div>
+          `;
         offersBox.appendChild(div);
       }
     });
