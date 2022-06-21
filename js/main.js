@@ -17,11 +17,39 @@ const allCategories = document.querySelectorAll(
 const firstMainBlock = document.querySelector(".blockFirst");
 const secondMainBlock = document.querySelector(".blockSecond");
 
+const offersBox = document.querySelector(".offers__box");
+
 allCategories.forEach((item) => {
   item.addEventListener("click", () => {
+    offersBox.innerHTML = "";
     offersSection.classList.add("offers--showOffers");
     firstMainBlock.classList.add("blockFirst--coverContent");
     secondMainBlock.classList.add("blockSecond--coverContent");
+    products.forEach((product) => {
+      if (product.category === item.innerText) {
+        const div = document.createElement("div");
+        div.classList.add("offers__box__item");
+        div.innerHTML = `
+        <div class="offers__box__item__detailsBox">
+    <div class="offers__box__item__detailsBox__img">
+      <img src=${product.imgSrc} alt="product image" />
+    </div>
+    <div class="offers__box__item__detailsBox__details">
+      <h3>Telefon Nokia 3310</h3>
+      <p>Stan: Nowy</p>
+      <p>${product.price}zł</p>
+      <p>Z dostawą: ${product.priceWithDelivery}zł</p>
+    </div>
+  </div>
+  <div class="offers__box__item__howPeopleBuy">
+    <p>155 osób kupiło</p>
+  </div>
+  <button class="offers__box__item__btn">koszyk</button>
+
+        `;
+        offersBox.appendChild(div);
+      }
+    });
   });
 });
 
@@ -44,6 +72,22 @@ dots.forEach((item, index) => {
   });
 });
 
-// const changeImage = () => {
-
-// }
+{
+  /* <div class="offers__box__item">
+  <div class="offers__box__item__detailsBox">
+    <div class="offers__box__item__detailsBox__img">
+      <img src="./images/nokia.jpg" alt="product image" />
+    </div>
+    <div class="offers__box__item__detailsBox__details">
+      <h3>Telefon Nokia 3310</h3>
+      <p>Stan: Nowy</p>
+      <p>99.99zł</p>
+      <p>Z dostawą: 112.99zł</p>
+    </div>
+  </div>
+  <div class="offers__box__item__howPeopleBuy">
+    <p>155 osób kupiło</p>
+  </div>
+  <button class="offers__box__item__btn">koszyk</button>
+</div>; */
+}
