@@ -38,7 +38,9 @@ allCategories.forEach((item) => {
         <h3>${product.name}</h3>
         <p>Stan: ${product.state}</p>
         <p>${product.price}zł</p>
-        <p>Z dostawą: ${product.price + product.priceWithDelivery}zł</p>
+        <p>Z dostawą: ${(product.price + product.priceWithDelivery).toFixed(
+          2
+        )}zł</p>
       </div>
     </div>
     <div class="wrapForItemEl">

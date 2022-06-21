@@ -30,6 +30,7 @@
           object-fit: cover;
         }
       }
+
       &__details {
         h3 {
           font-size: 2rem;
@@ -59,6 +60,7 @@
             transition: transform 0.3s;
             cursor: pointer;
           }
+
           img:hover {
             transform: scale(1.2);
           }
