@@ -72,7 +72,7 @@ dots.forEach((item, index) => {
     item.classList.add("active");
     backgroundImage.setAttribute(
       "style",
-      `background-image: url(../images/img${index + 1}.jpg)`
+      `background-image: url(./images/img${index + 1}.jpg)`
     );
     arr.push(index);
     console.log(arr);
